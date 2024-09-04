@@ -1,0 +1,1156 @@
+# trabajo5
+## Juego de Memoria
+
+El juego consiste en encontrar las parejas de cada carta, al comienzo se muestra un tablero que en función del nivel de dificultad (fácil, medio o dificil) tendrá más o menos cartas.
+
+Como hemos indicado el juego posee 3 niveles de dificultad y cada uno de ellos posee una mano de cartas diferente, dichas cartas se reparten de manera aleatoria al inicio de cada partida.
+
+Cada partida acumulara puntos en función del número de fallos y controlara la duración de la partida con un temporizador. Al finalizar la partida, la puntos se registraran en la tabla de puntuaciones para poder compararlos con las mejores puntuaciones de de otros jugadores.
+
+Podrá acceder a la ultima versión del juego desde el siguiente enlace: https://elvirarguez.github.io/parejas-memoria/
+616 changes: 616 additions & 0 deletions 616
+css/fonts/good_times/good_times_rg-demo.html
+
+Large diffs are not rendered by default.
+Binary file added BIN +42.8 KB
+css/fonts/good_times/good_times_rg-webfont.eot
+Binary file not shown.
+561 changes: 561 additions & 0 deletions 561
+css/fonts/good_times/good_times_rg-webfont.svg
+Loading
+Binary file added BIN +19.2 KB
+css/fonts/good_times/good_times_rg-webfont.woff
+Binary file not shown.
+Binary file added BIN +14.6 KB
+css/fonts/good_times/good_times_rg-webfont.woff2
+Binary file not shown.
+Binary file added BIN +67 KB
+css/fonts/good_times/good_times_rg.ttf
+Binary file not shown.
+Binary file added BIN +158 KB
+css/icon/favicon.gif
+Loading
+7 changes: 7 additions & 0 deletions 7
+css/icon/font-awesome-4.7.0/HELP-US-OUT.txt
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,7 @@
+I hope you love Font Awesome. If you've found it useful, please do me a favor and check out my latest project,
+Fort Awesome (https://fortawesome.com). It makes it easy to put the perfect icons on your website. Choose from our awesome,
+comprehensive icon sets or copy and paste your own.
+
+Please. Check it out.
+
+-Dave Gandy
+2,337 changes: 2,337 additions & 0 deletions 2,337
+css/icon/font-awesome-4.7.0/css/font-awesome.css
+
+Large diffs are not rendered by default.
+4 changes: 4 additions & 0 deletions 4
+css/icon/font-awesome-4.7.0/css/font-awesome.min.css
+
+Large diffs are not rendered by default.
+Binary file added BIN +132 KB
+css/icon/font-awesome-4.7.0/fonts/FontAwesome.otf
+Binary file not shown.
+Binary file added BIN +162 KB
+css/icon/font-awesome-4.7.0/fonts/fontawesome-webfont.eot
+Binary file not shown.
+2,671 changes: 2,671 additions & 0 deletions 2,671
+css/icon/font-awesome-4.7.0/fonts/fontawesome-webfont.svg
+Loading
+Binary file added BIN +162 KB
+css/icon/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf
+Binary file not shown.
+Binary file added BIN +95.7 KB
+css/icon/font-awesome-4.7.0/fonts/fontawesome-webfont.woff
+Binary file not shown.
+Binary file added BIN +75.4 KB
+css/icon/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2
+Binary file not shown.
+34 changes: 34 additions & 0 deletions 34
+css/icon/font-awesome-4.7.0/less/animated.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,34 @@
+// Animated Icons
+// --------------------------
+
+.@{fa-css-prefix}-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.@{fa-css-prefix}-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+25 changes: 25 additions & 0 deletions 25
+css/icon/font-awesome-4.7.0/less/bordered-pulled.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,25 @@
+// Bordered & Pulled
+// -------------------------
+
+.@{fa-css-prefix}-border {
+  padding: .2em .25em .15em;
+  border: solid .08em @fa-border-color;
+  border-radius: .1em;
+}
+
+.@{fa-css-prefix}-pull-left { float: left; }
+.@{fa-css-prefix}-pull-right { float: right; }
+
+.@{fa-css-prefix} {
+  &.@{fa-css-prefix}-pull-left { margin-right: .3em; }
+  &.@{fa-css-prefix}-pull-right { margin-left: .3em; }
+}
+
+/* Deprecated as of 4.4.0 */
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.@{fa-css-prefix} {
+  &.pull-left { margin-right: .3em; }
+  &.pull-right { margin-left: .3em; }
+}
+12 changes: 12 additions & 0 deletions 12
+css/icon/font-awesome-4.7.0/less/core.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,12 @@
+// Base Class Definition
+// -------------------------
+
+.@{fa-css-prefix} {
+  display: inline-block;
+  font: normal normal normal @fa-font-size-base/@fa-line-height-base FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+6 changes: 6 additions & 0 deletions 6
+css/icon/font-awesome-4.7.0/less/fixed-width.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,6 @@
+// Fixed Width Icons
+// -------------------------
+.@{fa-css-prefix}-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+18 changes: 18 additions & 0 deletions 18
+css/icon/font-awesome-4.7.0/less/font-awesome.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,18 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "variables.less";
+@import "mixins.less";
+@import "path.less";
+@import "core.less";
+@import "larger.less";
+@import "fixed-width.less";
+@import "list.less";
+@import "bordered-pulled.less";
+@import "animated.less";
+@import "rotated-flipped.less";
+@import "stacked.less";
+@import "icons.less";
+@import "screen-reader.less";
+789 changes: 789 additions & 0 deletions 789
+css/icon/font-awesome-4.7.0/less/icons.less
+
+Large diffs are not rendered by default.
+13 changes: 13 additions & 0 deletions 13
+css/icon/font-awesome-4.7.0/less/larger.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,13 @@
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.@{fa-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.@{fa-css-prefix}-2x { font-size: 2em; }
+.@{fa-css-prefix}-3x { font-size: 3em; }
+.@{fa-css-prefix}-4x { font-size: 4em; }
+.@{fa-css-prefix}-5x { font-size: 5em; }
+19 changes: 19 additions & 0 deletions 19
+css/icon/font-awesome-4.7.0/less/list.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,19 @@
+// List Icons
+// -------------------------
+
+.@{fa-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: @fa-li-width;
+  list-style-type: none;
+  > li { position: relative; }
+}
+.@{fa-css-prefix}-li {
+  position: absolute;
+  left: -@fa-li-width;
+  width: @fa-li-width;
+  top: (2em / 14);
+  text-align: center;
+  &.@{fa-css-prefix}-lg {
+    left: (-@fa-li-width + (4em / 14));
+  }
+}
+60 changes: 60 additions & 0 deletions 60
+css/icon/font-awesome-4.7.0/less/mixins.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,60 @@
+// Mixins
+// --------------------------
+
+.fa-icon() {
+  display: inline-block;
+  font: normal normal normal @fa-font-size-base/@fa-line-height-base FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.fa-icon-rotate(@degrees, @rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation})";
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+.fa-icon-flip(@horiz, @vert, @rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation}, mirror=1)";
+  -webkit-transform: scale(@horiz, @vert);
+      -ms-transform: scale(@horiz, @vert);
+          transform: scale(@horiz, @vert);
+}
+
+
+// Only display content to screen readers. A la Bootstrap 4.
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+
+.sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+//
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+//
+// Credit: HTML5 Boilerplate
+
+.sr-only-focusable() {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+15 changes: 15 additions & 0 deletions 15
+css/icon/font-awesome-4.7.0/less/path.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,15 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fa-font-path}/fontawesome-webfont.eot?v=@{fa-version}');
+  src: url('@{fa-font-path}/fontawesome-webfont.eot?#iefix&v=@{fa-version}') format('embedded-opentype'),
+    url('@{fa-font-path}/fontawesome-webfont.woff2?v=@{fa-version}') format('woff2'),
+    url('@{fa-font-path}/fontawesome-webfont.woff?v=@{fa-version}') format('woff'),
+    url('@{fa-font-path}/fontawesome-webfont.ttf?v=@{fa-version}') format('truetype'),
+    url('@{fa-font-path}/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular') format('svg');
+  // src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+20 changes: 20 additions & 0 deletions 20
+css/icon/font-awesome-4.7.0/less/rotated-flipped.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,20 @@
+// Rotated & Flipped Icons
+// -------------------------
+
+.@{fa-css-prefix}-rotate-90  { .fa-icon-rotate(90deg, 1);  }
+.@{fa-css-prefix}-rotate-180 { .fa-icon-rotate(180deg, 2); }
+.@{fa-css-prefix}-rotate-270 { .fa-icon-rotate(270deg, 3); }
+
+.@{fa-css-prefix}-flip-horizontal { .fa-icon-flip(-1, 1, 0); }
+.@{fa-css-prefix}-flip-vertical   { .fa-icon-flip(1, -1, 2); }
+
+// Hook for IE8-9
+// -------------------------
+
+:root .@{fa-css-prefix}-rotate-90,
+:root .@{fa-css-prefix}-rotate-180,
+:root .@{fa-css-prefix}-rotate-270,
+:root .@{fa-css-prefix}-flip-horizontal,
+:root .@{fa-css-prefix}-flip-vertical {
+  filter: none;
+}
+5 changes: 5 additions & 0 deletions 5
+css/icon/font-awesome-4.7.0/less/screen-reader.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,5 @@
+// Screen Readers
+// -------------------------
+
+.sr-only { .sr-only(); }
+.sr-only-focusable { .sr-only-focusable(); }
+20 changes: 20 additions & 0 deletions 20
+css/icon/font-awesome-4.7.0/less/stacked.less
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,20 @@
+// Stacked Icons
+// -------------------------
+
+.@{fa-css-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.@{fa-css-prefix}-stack-1x, .@{fa-css-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.@{fa-css-prefix}-stack-1x { line-height: inherit; }
+.@{fa-css-prefix}-stack-2x { font-size: 2em; }
+.@{fa-css-prefix}-inverse { color: @fa-inverse; }
+800 changes: 800 additions & 0 deletions 800
+css/icon/font-awesome-4.7.0/less/variables.less
+
+Large diffs are not rendered by default.
+34 changes: 34 additions & 0 deletions 34
+css/icon/font-awesome-4.7.0/scss/_animated.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,34 @@
+// Spinning Icons
+// --------------------------
+
+.#{$fa-css-prefix}-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.#{$fa-css-prefix}-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+25 changes: 25 additions & 0 deletions 25
+css/icon/font-awesome-4.7.0/scss/_bordered-pulled.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,25 @@
+// Bordered & Pulled
+// -------------------------
+
+.#{$fa-css-prefix}-border {
+  padding: .2em .25em .15em;
+  border: solid .08em $fa-border-color;
+  border-radius: .1em;
+}
+
+.#{$fa-css-prefix}-pull-left { float: left; }
+.#{$fa-css-prefix}-pull-right { float: right; }
+
+.#{$fa-css-prefix} {
+  &.#{$fa-css-prefix}-pull-left { margin-right: .3em; }
+  &.#{$fa-css-prefix}-pull-right { margin-left: .3em; }
+}
+
+/* Deprecated as of 4.4.0 */
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.#{$fa-css-prefix} {
+  &.pull-left { margin-right: .3em; }
+  &.pull-right { margin-left: .3em; }
+}
+12 changes: 12 additions & 0 deletions 12
+css/icon/font-awesome-4.7.0/scss/_core.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,12 @@
+// Base Class Definition
+// -------------------------
+
+.#{$fa-css-prefix} {
+  display: inline-block;
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+6 changes: 6 additions & 0 deletions 6
+css/icon/font-awesome-4.7.0/scss/_fixed-width.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,6 @@
+// Fixed Width Icons
+// -------------------------
+.#{$fa-css-prefix}-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+789 changes: 789 additions & 0 deletions 789
+css/icon/font-awesome-4.7.0/scss/_icons.scss
+
+Large diffs are not rendered by default.
+13 changes: 13 additions & 0 deletions 13
+css/icon/font-awesome-4.7.0/scss/_larger.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,13 @@
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.#{$fa-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.#{$fa-css-prefix}-2x { font-size: 2em; }
+.#{$fa-css-prefix}-3x { font-size: 3em; }
+.#{$fa-css-prefix}-4x { font-size: 4em; }
+.#{$fa-css-prefix}-5x { font-size: 5em; }
+19 changes: 19 additions & 0 deletions 19
+css/icon/font-awesome-4.7.0/scss/_list.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,19 @@
+// List Icons
+// -------------------------
+
+.#{$fa-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: $fa-li-width;
+  list-style-type: none;
+  > li { position: relative; }
+}
+.#{$fa-css-prefix}-li {
+  position: absolute;
+  left: -$fa-li-width;
+  width: $fa-li-width;
+  top: (2em / 14);
+  text-align: center;
+  &.#{$fa-css-prefix}-lg {
+    left: -$fa-li-width + (4em / 14);
+  }
+}
+60 changes: 60 additions & 0 deletions 60
+css/icon/font-awesome-4.7.0/scss/_mixins.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,60 @@
+// Mixins
+// --------------------------
+
+@mixin fa-icon() {
+  display: inline-block;
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+@mixin fa-icon-rotate($degrees, $rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+
+@mixin fa-icon-flip($horiz, $vert, $rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)";
+  -webkit-transform: scale($horiz, $vert);
+      -ms-transform: scale($horiz, $vert);
+          transform: scale($horiz, $vert);
+}
+
+
+// Only display content to screen readers. A la Bootstrap 4.
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+//
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+//
+// Credit: HTML5 Boilerplate
+
+@mixin sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+15 changes: 15 additions & 0 deletions 15
+css/icon/font-awesome-4.7.0/scss/_path.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,15 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+20 changes: 20 additions & 0 deletions 20
+css/icon/font-awesome-4.7.0/scss/_rotated-flipped.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,20 @@
+// Rotated & Flipped Icons
+// -------------------------
+
+.#{$fa-css-prefix}-rotate-90  { @include fa-icon-rotate(90deg, 1);  }
+.#{$fa-css-prefix}-rotate-180 { @include fa-icon-rotate(180deg, 2); }
+.#{$fa-css-prefix}-rotate-270 { @include fa-icon-rotate(270deg, 3); }
+
+.#{$fa-css-prefix}-flip-horizontal { @include fa-icon-flip(-1, 1, 0); }
+.#{$fa-css-prefix}-flip-vertical   { @include fa-icon-flip(1, -1, 2); }
+
+// Hook for IE8-9
+// -------------------------
+
+:root .#{$fa-css-prefix}-rotate-90,
+:root .#{$fa-css-prefix}-rotate-180,
+:root .#{$fa-css-prefix}-rotate-270,
+:root .#{$fa-css-prefix}-flip-horizontal,
+:root .#{$fa-css-prefix}-flip-vertical {
+  filter: none;
+}
+5 changes: 5 additions & 0 deletions 5
+css/icon/font-awesome-4.7.0/scss/_screen-reader.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,5 @@
+// Screen Readers
+// -------------------------
+
+.sr-only { @include sr-only(); }
+.sr-only-focusable { @include sr-only-focusable(); }
+20 changes: 20 additions & 0 deletions 20
+css/icon/font-awesome-4.7.0/scss/_stacked.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,20 @@
+// Stacked Icons
+// -------------------------
+
+.#{$fa-css-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.#{$fa-css-prefix}-stack-1x, .#{$fa-css-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.#{$fa-css-prefix}-stack-1x { line-height: inherit; }
+.#{$fa-css-prefix}-stack-2x { font-size: 2em; }
+.#{$fa-css-prefix}-inverse { color: $fa-inverse; }
+800 changes: 800 additions & 0 deletions 800
+css/icon/font-awesome-4.7.0/scss/_variables.scss
+
+Large diffs are not rendered by default.
+18 changes: 18 additions & 0 deletions 18
+css/icon/font-awesome-4.7.0/scss/font-awesome.scss
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,18 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "variables";
+@import "mixins";
+@import "path";
+@import "core";
+@import "larger";
+@import "fixed-width";
+@import "list";
+@import "bordered-pulled";
+@import "animated";
+@import "rotated-flipped";
+@import "stacked";
+@import "icons";
+@import "screen-reader";
+256 changes: 256 additions & 0 deletions 256
+css/main.css
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,256 @@
+/*VARIABLES*/
+:root {
+    --rowNum: 4;
+    --colNum: 4;
+    --gridHeight: 128px;
+    --gridWidht: 128px;
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: 'good-times';
+    src: url('fonts/good_times/good_times_rg-webfont.eot');
+    src: url('fonts/good_times/good_times_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/good_times/good_times_rg-webfont.woff2') format('woff2'),
+         url('fonts/good_times/good_times_rg-webfont.woff') format('woff'), 
+         url('fonts/good_times/good_times_rg.ttf') format('truetype'),      
+         url('fonts/good_times/good_times_rg-webfont.svg#goodtimes') format('svg');
+}
+
+html {
+    height: 100%;
+}
+
+/*CUERPO*/
+body {
+    background: #A770EF;
+    background: -webkit-linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF); 
+    background-repeat: no-repeat;   
+}
+
+/*CONTAINER ELEMENTS*/
+.container {
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    grid-template-areas: "numPartidas maxPuntos puntos cronometro"
+                         "baraja baraja baraja baraja";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.numPartidas, .maxPuntos, .puntos, .reloj {    
+    font-family: 'good-times';
+}
+
+/*PARTIDAS*/
+.numPartidas {
+    grid-area: numPartidas;   
+}
+
+/*PUNTOS*/
+.maxPuntos {
+    grid-area: maxPuntos;
+}
+
+.puntos {
+    grid-area: puntos;
+}
+
+/*CRONOMETRO*/
+.cronometro {
+    grid-area: cronometro;
+}
+
+.reloj {
+    display: inline;
+    font-weight: bold;
+}
+
+/* TABLERO */
+.wrapper {
+    grid-area: baraja;
+    padding: 2%;
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(var(--rowNum), var(--gridHeight));
+    grid-template-columns: repeat(var(--colNum), var(--gridWidht));
+    gap: 20px;
+}
+
+/* CARTAS */
+.carta {
+    grid-column-start: auto;
+    grid-row-start: auto; 
+
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    width: var(--gridWidht);
+    height: var(--gridHeight);
+}
+
+/* IMAGEN FRONT CARTA */
+input[type='image'] {
+    background: white;    
+    border-radius: 12px;     
+}
+
+.face {
+    position: absolute;
+    width: var(--gridWidht);
+    height: var(--gridHeight);
+}
+
+.back {
+    transform: rotateY(0deg) scale(1);
+    backface-visibility: hidden;
+}
+
+/* ANIMACIONES CARTA GIRAR Y CRECER */
+.mostrar {
+    transform: rotateY(180deg) scale(1.12);
+    -ms-transform: rotateY(180deg) scale(1.12); /* IE 9  */
+    -moz-transform: rotateY(180deg) scale(1.12); /* Firefox */
+    -webkit-transform: rotateY(180deg) scale(1.12); /* Safari and Chrome */
+    -o-transform: rotateY(180deg) scale(1.12); /* Opera */
+}
+
+.ocultar {
+    transform: rotateY(0deg) scale(1);
+    -ms-transform: rotateY(0deg) scale(1); /* IE 9  */
+    -moz-transform: rotateY(0deg) scale(1); /* Firefox */
+    -webkit-transform: rotateY(0deg) scale(1); /* Safari and Chrome */
+    -o-transform: rotateY(0deg) scale(1); /* Opera */
+}
+
+.back input[type='image']:hover {
+    border: 2px solid darkviolet;    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* BLOQUEO TABLERO */
+.wrapper.bloquear {
+    opacity: 0.8;
+}
+
+.bloquear input[type='image']:hover {
+    border: none;
+    box-shadow: none;
+}
+
+/* MODAL */
+.modalDialog {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.hide {
+    display: none;
+}
+
+.modal-content {
+    width: 60%;
+    margin: 5% auto;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+
+    display: grid;
+    gap: 5px;
+}
+
+.modal-header {
+    padding-top: 3%;
+    font-family: 'good-times';
+    font-weight: bold;
+}
+
+.modal-body {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding: 3%;    
+}
+
+/*MODAL PUNTOS*/
+.modal-score-body {
+    display: grid;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.tabla {
+    grid-auto-flow: column;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer {
+    margin: 5% 5% 0 10%;
+    gap: 12px;
+}
+
+.titlePtos {
+    font-family: 'good-times';
+    font-size: small;
+}
+
+/*MODAL PARTIDAS*/
+.modal-tscore-body {
+    display: grid;
+    padding: 2%;
+}
+
+.tPartidas {
+    grid-auto-flow: column;    
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+/*BOTONES*/
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    border: 3px solid darkgreen;
+    padding: 4px 12px;
+}
+
+.btn.cancel {
+    background-color: firebrick;
+}
+
+.btn.cancel:hover {
+    background-color: firebrick;
+    border: 3px solid darkred;
+    padding: 4px 12px;
+}
+
+.btn.neutral {
+    background-color: gray;
+}
+
+.btn.neutral:hover {
+    background-color: gray;
+    border: 3px solid darkslategray;
+    padding: 4px 12px;
+}
+16 changes: 16 additions & 0 deletions 16
+css/mediumWindows.css
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,16 @@
+/*VARIABLES*/
+:root {
+    --gridHeight: 110px;
+    --gridWidht: 110px;
+}
+
+/* GRID */
+.wrapper {
+    padding: 2%;
+    gap: 22px;
+}
+
+input[type='image'] {
+    height: var(--gridHeight);
+    width: var(--gridWidht);
+}
+29 changes: 29 additions & 0 deletions 29
+css/smallWindows.css
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,29 @@
+/*VARIABLES*/
+:root {
+    --gridHeight: 100px;
+    --gridWidht: 100px;
+}
+
+/*MODAL INICIAL */
+.modal-content {
+    width: 80%;
+}
+
+/* GRID */
+.wrapper {
+    padding: 3%;
+    gap: 18px;
+}
+
+.mostrar {
+    transform: rotateY(180deg) scale(1.15);
+    -ms-transform: rotateY(180deg) scale(1.15); /* IE 9  */
+    -moz-transform: rotateY(180deg) scale(1.15); /* Firefox */
+    -webkit-transform: rotateY(180deg) scale(1.15); /* Safari and Chrome */
+    -o-transform: rotateY(180deg) scale(1.15); /* Opera */
+}
+
+input[type='image'] {
+    height: var(--gridHeight);
+    width: var(--gridWidht);
+}
+39 changes: 39 additions & 0 deletions 39
+css/verticalWindows.css
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,39 @@
+/*VARIABLES*/
+:root {
+    --gridHeight: 80px;
+    --gridWidht: 80px;
+}
+
+/*MODAL INICIAL */
+.modal-content {
+    width: 95%;
+}
+
+/* GRID */
+.wrapper {
+    padding: 3%;
+    gap: 18px;
+}
+
+.carta input[type='image'] {
+    width: var(--gridWidht);
+    height: var(--gridHeight);
+}
+
+.mostrar {
+    transform: rotateY(180deg) scale(1.2);
+    -ms-transform: rotateY(180deg) scale(1.2); /* IE 9  */
+    -moz-transform: rotateY(180deg) scale(1.2); /* Firefox */
+    -webkit-transform: rotateY(180deg) scale(1.2); /* Safari and Chrome */
+    -o-transform: rotateY(180deg) scale(1.2); /* Opera */
+}
+
+/*BOTONES*/
+.btn {
+    padding: 4px 7px;
+    font-size: 14px;
+}
+
+.btn:hover, .btn.cancel:hover, .btn.neutral:hover {
+    padding: 1px 4px;
+}
+2 changes: 2 additions & 0 deletions 2
+debug.log
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,2 @@
+[0730/210735.092:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0730/210735.092:ERROR:crash_report_database_win.cc(469)] failed to stat report
+1 change: 1 addition & 0 deletions 1
+doc/Mapa_Navegacion.xml
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1 @@
+<mxfile modified="2018-12-10T20:23:11.132Z" host="www.draw.io" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0" etag="VVSnpUJfEpuArg335_PR" version="9.6.0" type="device"><diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">7Zlbb5swFMc/Da8VmFt4bNPSTlqlSZm07tGBE3Dr4MiYXPbpZwdzT6tpiUi6hYfE/ts+HPv8crCJYU+X20eOV+kzi4EayIy3hn1vIGQhx5NfStmVimeZpZBwEpdSS5iRX6BHVmpBYsi1VkqCMSrIqitGLMsgEh0Nc8423W4LRuOOsMIJDIRZhOlQ/UFikWrV8oKm4QlIkupbT5BfNsxx9JZwVmT6fgayF/urbF7iypaeaJ7imG1akv1g2FPOmChLy+0UqFrb7rKF77TWfnPIxB8N8L1JOWaNaQGV03vXxK5aDojl6uhqxjL5dbefIygrpqy9FstVr0MqllTWLFmsJ6m6UjwHelcv05RRxptRucBc3KoI9rSQUKotQBZXPSKK85xEpai7qDu+ghA7jRUuBJMS4yJlCcsw/crYqvJMcPYGlQ8yWGF4H3he3VIF35bKgmUixEtCFdNPQNcgSIR1g76X5eh6x6S6lMkVjkiWSNWVtWGkdPByVvAI6vBosOQaJCBq1SlVFZjWYB3jR2BLEHwnO3CgWJB1F2usfx1J3a8hRBY0JO8B4/pXYJroypQQ7PG4GGDMg8DYZwTmmmE+ITDojMAEV2A+HzDW+YCpPGoBc08WJCqowPEAnYYTtd6blAiYyXVQrRu5nT0ClHbkOmInaJKJXnjjkwQTU5JkikAZPuCD6O7N6FVQM8M80lZ9WVsBJ3Llgc/qQegjJNbABWw/DLRutU0dHX0WQI5745bKprW3dnWvtLWtruJ6JB3WYToIvXA0PGc+BzQCGmOh4PZQcGxzZBTQAIVniAm7gjAuCP2c4ATeyCDYAxBCY2obt9Y1LYxOg3X2tOAMaPiO5xSrN1igZldkguUXjsXDxPWcMbD4q41ETDhEgjBldwO5ONEDxar3EtXuIrBHJcc9cFTxqNjPeC2LiSre7ooYV7o02mq6cKhQ6N75038o18iI9YkZfT/qHWDmvz3ejvfGFbZEvGg3VPmnmt2Nf/zLWE3PWU6+h17GDvLPl0yedtinTEChOfFN9xQwXEgCGj6yLHfkBOQPX5dcE9CICcgcJiDJE9+99Oo/dd/jspN56uykh35jRLrTcB24N07QXP2H7OQGeWiCTNdSn5Wvlf3SZ22yx3Lt4yG8ZbX5t7Ts3vwlbT/8Bg==</diagram></mxfile>
+Binary file added BIN +8.7 KB
+doc/Mapa_navegacion.PNG
+Loading
+Binary file added BIN +27.1 KB
+doc/proyectoParejas.epgz
+Binary file not shown.
+104 changes: 104 additions & 0 deletions 104
+index.html
+Original file line number 	Diff line number 	Diff line change
+@@ -0,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- FAVICON ANIMADO -->
+    <link rel="shortcut icon" href="css/icon/favicon.gif" type="image.gif">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="(min-width: 1280px) and (max-width: 1400px) and (orientation: landscape)" href="css/mediumWindows.css" />
+    <link rel="stylesheet" media="(min-width: 1024px) and (max-width: 1280px) and (orientation: landscape)" href="css/smallWindows.css" />
+    <link rel="stylesheet" media="(max-width: 1024px) or (orientation: portrait)" href="css/verticalWindows.css" />
+    <!-- CSS PLUGIN INTROJS -->
+    <link rel="stylesheet" href="plugin/introJS/introjs.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="css/icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title> Encuentra la pareja </title>
+</head>
+
+<body>
+    <!-- MODAL INICIAL ELEGIR DIFICULTAD -->
+    <div id="modal" class="modalDialog">
+        <div class="modal-content">
+            <div class="modal-header"> Seleccione un nivel de dificultad </div>
+            <div id="modal-body" class="modal-body">
+                <div id="dificultadBtn" class="modal-body">
+                    <button id="facil" class="btn"> Fácil </button>
+                    <button id="medio" class="btn"> Medio </button>
+                    <button id="dificil" class="btn"> Dificil </button>
+                </div>
+
+                <div id="otherBtn" class="modal-body">
+                    <button id="tablaPuntuaciones" class="btn neutral"> Ver tabla de puntuaciones </button>
+                    <button id="ayuda" class="btn neutral">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL GUARDAR PARTIDA -->
+    <div id="modalScore" class="hide">
+        <div class="modal-content">
+            <div class="modal-header"> Guardar puntuación </div>
+            <div id="modal-score-body" class="modal-score-body">
+                <div class='tabla'>
+                    <label class='titlePtos'>Nombre</label>
+                    <label class='titlePtos'>Puntos</label>
+                    <label class='titlePtos'>Tiempo</label>
+                </div>
+                <div class="tabla">
+                    <input id="nombreJugador" type="text">
+                    <label id="puntosPartida"></label>
+                    <label id="tiempoPartida"></label>
+                </div>
+                <div class="tabla footer">
+                    <div></div>
+                    <button id="guardarJugador" class="btn">Guardar</button>
+                    <button id="cancelar" class="btn cancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL TABLA DE PUNTUACIONES -->
+    <div id="modalTableScore" class="hide">
+        <div class="modal-content">
+            <div class="modal-header"> Tabla de puntuaciones </div>
+            <div id="modalTableScoreBody" class="modal-tscore-body">
+                <div id="tPartidas" class="modal-tscore-body"></div>
+                <div class='footer'>
+                    <button id='limpiar' class='btn cancel'>Limpiar historial partidas</button>
+                    <button id='cerrar' class='btn cancel'>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="numPartidas" class="numPartidas">
+            Partida nº: <span id="numPartidasValue"></span>
+        </div>
+        <div id="maxScore" class="maxPuntos">
+            Puntuación Max.: <span id="puntosMaxValue">0</span>
+        </div>
+        <div id="score" class="puntos">
+            Puntos: <span id="puntosValue">0</span>
+        </div>
+        <div id="cronometro" class="cronometro">
+            <div class="reloj" id="Minutos">00</div>
+            <div class="reloj" id="Segundos">:00</div>
+        </div>
+        <div id="wrapper" class="wrapper"></div>
+    </div>
+
+    <script src="js/cronometro.js"></script>
+    <script src="js/imagenes.js"></script>
+    <script src="js/modalScore.js"></script>
+    <script src="plugin/introJS/intro.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
